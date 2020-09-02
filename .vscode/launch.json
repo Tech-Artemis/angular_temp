@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch in Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:4200",
+            "webRoot": "${workspaceFolder}/src/app",
+            "preLaunchTask": "ng serve",
+            // "timeout": 10000, //only required when attaching debugger to existing browser instance.
+        }
+    ]
+}

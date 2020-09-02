@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "ng serve",
+			"type": "shell",
+			"command": "\"start ng serve\"" //--open flag is only required for attaching debugger to a browser.
+			//Don't use ng serve --open when launching a new chrome instance otherwise it will create two sessions: one isolated chrome and other one is regular chrome.
+		},
+		{
+			"label": "ng test",
+			"type": "shell",
+			"command": "\"start ng test\"",
+		}
+	]
+}
