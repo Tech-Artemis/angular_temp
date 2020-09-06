@@ -14,13 +14,17 @@
             <span></span><span></span><span></span>
         </div>
     </div>
-    
+
     <!-- Header Area Start -->
-    <header>
-        <sidebar></sidebar>
-    </header>
-    <!-- Header Area End -->
-    <app-home></app-home>
+    <div class="row">
+        <div class="col-xs-3 d-none d-sm-block col-md-3">
+            <sidebar></sidebar>
+        </div>
+        <!-- Header Area End -->
+        <div class="col-xs-9 col-md-9">
+            <app-home></app-home>
+        </div>
+    </div>
 </div>
 <newsletter></newsletter>
 <app-footer></app-footer>
