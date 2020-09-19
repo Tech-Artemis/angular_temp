@@ -10,6 +10,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { SvgModule } from '../shared/svg/svg.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -18,10 +19,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SvgModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    SvgModule
   ]
 })
 export class HomeModule { }
