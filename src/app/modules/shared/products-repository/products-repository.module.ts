@@ -1,10 +1,6 @@
 import { NgModule } from '@angular/core';
-import { ProductsService } from './services/products.service';
 
 @NgModule({
-  declarations: [],
-  providers: [
-    ProductsService
-  ]
+  declarations: []
 })
 export class ProductsRepositoryModule { }

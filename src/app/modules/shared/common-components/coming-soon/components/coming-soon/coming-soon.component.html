@@ -1,0 +1,55 @@
+<div class="main-area">
+    <div class="container full-height position-static">
+
+        <section class="left-section full-height">
+
+            <div class="display-table">
+                <div class="display-table-cell">
+                    <div class="main-content">
+                        <h1 class="title"><b>Under Construction</b></h1>
+                        <p>This part of our website is currently under construction.</p>
+                        <p>
+                            However, you can place offline orders.
+                            Please connect to us on social media links below or contact us at:
+                        </p>
+                        <div class="icon icon-map-marker"></div>
+                        <div>Mphlix, Pune, India
+                            <a href="#">
+                                <div class="icon icon-phone"></div>
+                                <div class="text">+91 91759 64391</div>
+                            </a>
+                            <a href="#">
+                                <div class="icon icon-envelope"></div>
+                                <div class="text">mohapatramahashweta@gmail.com</div>
+                            </a>
+                        </div>
+                    </div><!-- main-content -->
+                </div><!-- display-table-cell -->
+            </div><!-- display-table -->
+
+            <ul class="footer-icons">
+                <li>Stay in touch : </li>
+                <li *ngFor="let profile of socialProfiles">
+                    <a [href]="profile.url"><i class="{{profile.iconClass}} fa-2x"></i></a>
+                </li>
+            </ul>
+
+        </section><!-- left-section -->
+
+        <section class="right-section" style="background-image: url(images/countdown-1-1000x1000.jpg)">
+
+            <div class="display-table center-text">
+                <div class="display-table-cell">
+
+
+                    <div id="rounded-countdown">
+                        <div class="countdown" data-remaining-sec="2000000"></div>
+                    </div>
+
+                </div><!-- display-table-cell -->
+            </div><!-- display-table -->
+
+        </section><!-- right-section -->
+
+    </div><!-- container -->
+</div><!-- main-area -->

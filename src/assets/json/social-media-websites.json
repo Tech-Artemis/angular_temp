@@ -1,0 +1,21 @@
+[
+    {
+        "id": 1,
+        "name": "instagram",
+        "iconClass": "fa fa-instagram",
+        "url": "https://www.instagram.com/"
+    },
+    {
+        "id": 2,
+        "name": "twitter",
+        "profileId": "MphlixSoapworks",
+        "iconClass": "fa fa-twitter",
+        "url": "https://twitter.com/"
+    },
+    {
+        "id": 3,
+        "name": "facebook",
+        "iconClass": "fa fa-facebook",
+        "url": "https://www.facebook.com/"
+    }
+]

@@ -31,8 +31,8 @@
     </div>
     <!-- Social Button -->
     <div class="social-info d-flex justify-content-between">
-        <a *ngFor="let profile of socialMediaProfilesToShow" [href]="profile.url">
-            <i [class]="profile.iconClass"></i>
+        <a *ngFor="let profile of socialProfiles" [href]="profile.url">
+            <i class="{{profile.iconClass}} fa-3x"></i>
         </a>
     </div>
 </div>

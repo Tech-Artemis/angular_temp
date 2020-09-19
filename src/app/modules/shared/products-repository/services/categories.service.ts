@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Category } from '../interfaces/Category/Category';
 import * as categoriesJson from 'src/assets/json/categories.json';
-import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
+import { EntityRepopulationService } from '../../common-services/entity-repopulation.service';
 
 @Injectable({
     providedIn: 'root'

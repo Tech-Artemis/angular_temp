@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialProfilesService } from 'src/app/modules/shared/social-media/services/social-profile/social-profiles.service';
+import { SocialProfile } from 'src/app/modules/shared/social-media/interfaces/SocialProfile';
 
 @Component({
   selector: 'sidebar',
@@ -42,41 +44,14 @@ export class SidebarComponent implements OnInit {
 
   quickLinksToShow: any[];
 
-  private socialMediaUrls = [
-    { name: 'instagram', url: 'https://www.instagram.com/' },
-    { name: 'twitter', url: 'https://twitter.com/' },
-    { name: 'github', url: 'https://www.github.com/' },
-    { name: 'facebook', url: 'https://www.facebook.com/' }
-  ];
+  socialProfiles: SocialProfile[];
 
-  private socialMediaProfiles: any[] = [
-    {
-      name: "instagram",
-      profileId: "mphlix",
-      iconClass: "fa fa-instagram fa-3x"
-    },
-    {
-      name: "twitter",
-      profileId: "MphlixSoapworks",
-      iconClass: "fa fa-twitter fa-3x"
-    },
-    {
-      name: "facebook",
-      profileId: "MPhlix-158263684780140",
-      iconClass: "fa fa-facebook fa-3x"
-    }
-  ];
-
-  socialMediaProfilesToShow: any[];
-
-  constructor() {
+  constructor(private socialProfilesService: SocialProfilesService) {
     this.linksToShow = this.navLinks.filter(a => a.show);
     this.promotionalButtonsToShow = this.promotionalButtons.filter(a => a.show);
     this.quickLinks.find(a => a.text === 'Cart').text += " (0)";
     this.quickLinksToShow = this.quickLinks.filter(a => a.show);
-    this.socialMediaProfilesToShow = this.socialMediaProfiles.map(profile => {
-      return { iconClass: profile.iconClass, url: this.socialMediaUrls.find(a => a.name === profile.name).url + profile.profileId };
-    });
+    this.socialProfiles = socialProfilesService.getSocialMediaProfiles();
   }
 
   ngOnInit() {

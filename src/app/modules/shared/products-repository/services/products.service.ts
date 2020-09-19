@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { ProductsContainer } from '../interfaces/Product/ProductsContainer';
 import { Product } from '../interfaces/Product/Product';
-import { EntityRepopulationService } from '../interfaces/entity-repopulation.service';
+import { EntityRepopulationService } from '../../common-services/entity-repopulation.service';
 
 import { CategoriesService } from './categories.service';
 import { SkinAreaService } from './skin-area.service';

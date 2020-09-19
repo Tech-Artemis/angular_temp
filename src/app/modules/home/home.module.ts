@@ -11,6 +11,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SvgModule } from '../shared/svg/svg.module';
+import { Routes, RouterModule } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent }
+];
 
 @NgModule({
   declarations: [HomeComponent],
@@ -20,7 +25,8 @@ import { SvgModule } from '../shared/svg/svg.module';
     MatToolbarModule,
     MatButtonModule,
     FlexLayoutModule,
-    SvgModule
+    SvgModule,
+    RouterModule.forChild(appRoutes)
   ],
   exports: [
     HomeComponent,
