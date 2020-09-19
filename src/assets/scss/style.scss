@@ -1,34 +1,34 @@
-@import 'theme_color';
-@import 'variables';
-@import 'mixin';
-@import 'responsive';
+@import "theme_color";
+@import "variables";
+@import "mixin";
+@import "responsive";
 
 /* [Master Stylesheet v-1.0.0] */
 
 /* :: :: 1.0 Import Fonts */
 
 @font-face {
-    font-family: 'helveticaneuebold';
-    src: url('../fonts/helvetica_neu_bold-webfont.woff2') format('woff2'),
-    url('../fonts/helvetica_neu_bold-webfont.woff') format('woff');
+    font-family: "helveticaneuebold";
+    src: url("../fonts/helvetica_neu_bold-webfont.woff2") format("woff2"),
+        url("../fonts/helvetica_neu_bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'helveticaneuemedium';
-    src: url('../fonts/helveticaneue_medium-webfont.woff2') format('woff2'),
-    url('../fonts/helveticaneue_medium-webfont.woff') format('woff');
+    font-family: "helveticaneuemedium";
+    src: url("../fonts/helveticaneue_medium-webfont.woff2") format("woff2"),
+        url("../fonts/helveticaneue_medium-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 /* :: 2.0 Import All CSS */
 
-@import '../css/animate.css';
-@import '../css/magnific-popup.css';
-@import '../css/nice-select.css';
-@import '../css/font-awesome.min.css';
+@import "../css/animate.css";
+@import "../css/magnific-popup.css";
+@import "../css/nice-select.css";
+@import "../css/font-awesome.min.css";
 
 /* :: 3.0 Base CSS */
 
@@ -51,7 +51,6 @@ h6 {
     color: $heading-color;
     line-height: 1.3;
     font-weight: 400;
-
 }
 
 p {
@@ -60,7 +59,6 @@ p {
     line-height: 1.9;
     font-weight: 400;
 }
-
 
 a {
     @include transition(all 500ms ease 0s);
@@ -274,7 +272,7 @@ img {
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
-    color: #FFF;
+    color: #fff;
     right: 0;
     padding-right: 0;
     width: 30px;
@@ -547,7 +545,7 @@ img {
                         left: -150px;
                         background-color: $bg-default;
                         z-index: 10;
-                        content: '';
+                        content: "";
                     }
                     &:hover,
                     &:focus {
@@ -1103,7 +1101,7 @@ img {
             height: 100%;
             top: 0;
             left: 0;
-            content: '';
+            content: "";
             background-color: rgba(60, 60, 60, 0.7);
             z-index: 1;
             opacity: 0;
