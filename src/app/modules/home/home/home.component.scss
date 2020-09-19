@@ -146,7 +146,7 @@
   margin-left: 0px;
 }
 
-.mat-item-custom img {
+.mat-card-custom img {
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
   -webkit-transition: all 0.25s ease;
@@ -156,7 +156,11 @@
   transition: all 0.25s ease;
 }
 
-.mat-item-custom img:hover {
+.mat-card-custom img:hover {
   filter: brightness(50%);
   -webkit-filter: brightness(50%);
+}
+
+.mat-card-header .mat-card-title {
+  font-size: 15px;
 }

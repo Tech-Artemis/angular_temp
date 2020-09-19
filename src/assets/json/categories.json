@@ -1,0 +1,56 @@
+[
+    {
+        "Id": 1,
+        "Name": "After Shave",
+        "ImageFolderPath": "/after-shave",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 2,
+        "Name": "Eau De Parfum",
+        "ImageFolderPath": "/eau-de-parfum",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 3,
+        "Name": "Luxury",
+        "ImageFolderPath": "/luxury",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 4,
+        "Name": "Medi Care",
+        "ImageFolderPath": "/medi-care",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 5,
+        "Name": "Room Freshner",
+        "ImageFolderPath": "/room-freshner",
+        "ParentCategoryId": null
+    },
+    {
+        "Id": 6,
+        "Name": "Lotion",
+        "ParentCategoryId": 1,
+        "ImageFolderPath": "/lotion"
+    },
+    {
+        "Id": 7,
+        "Name": "Purse Concentrate",
+        "ParentCategoryId": 3,
+        "ImageFolderPath": "/purse-concentrate"
+    },
+    {
+        "Id": 8,
+        "Name": "Headache Relief",
+        "ParentCategoryId": 4,
+        "ImageFolderPath": "/headache-relief"
+    },
+    {
+        "Id": 9,
+        "Name": "Insect Repellent",
+        "ParentCategoryId": 4,
+        "ImageFolderPath": "/insect-repellent"
+    }
+]
