@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ReleaseService } from '../services/release.service';
+import { ReleaseService } from '../../services/release.service';
 
 @Component({
   selector: 'app-footer',
