@@ -1,0 +1,28 @@
+<div class="custom-tab-navbar container-fluid">
+    <div class="row">
+        <a *ngFor="let link of linksToShow" [title]="link.text" [routerLink]="['/' + link.url]" routerLinkActive="active current" class="col-3 custom-tab">
+            <svg-icon [name]="link.icon" [style]="{ height: '20px', width:'20px' }">
+            </svg-icon>
+        </a>
+        <!-- <a [routerLink]="['/home']" routerLinkActive="active current" class="col-3 tab">
+            <svg-icon name="home_colored" [style]="{ height: '20px', width:'20px' }">
+                Home
+            </svg-icon>
+        </a>
+        <a [routerLink]="['/search']" routerLinkActive="active current" class="col-3 tab">
+            <svg-icon name="search_glass_colored" [style]="{ height: '20px', width:'20px' }">
+                Search
+            </svg-icon>
+        </a>
+        <a [routerLink]="['/cart']" routerLinkActive="active current" class="col-3 tab">
+            <svg-icon name="cart_colored" [style]="{ height: '20px', width:'20px' }">
+                Cart
+            </svg-icon>
+        </a>
+        <a [routerLink]="['/checkout']" routerLinkActive="active current" class="col-3 tab">
+            <svg-icon name="user_circled_colored" [style]="{ height: '20px', width:'20px' }">
+                Account
+            </svg-icon>
+        </a> -->
+    </div>
+</div>

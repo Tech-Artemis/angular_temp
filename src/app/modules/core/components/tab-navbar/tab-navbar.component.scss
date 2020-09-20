@@ -1,0 +1,42 @@
+@media only screen and (min-width: 768px) {
+    .custom-tab-navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .custom-tab-navbar {
+        overflow: hidden;
+        background-color: #dcdcdc;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+        line-height: 0;
+    }
+
+    .custom-tab-navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 0px;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .custom-tab-navbar a:hover {
+        background: #f1f1f1;
+        color: black;
+    }
+
+    .custom-tab-navbar a.active {
+        background-color: #fff;
+        color: white;
+    }
+
+    .custom-tab {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
