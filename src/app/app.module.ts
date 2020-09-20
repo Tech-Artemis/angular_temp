@@ -29,7 +29,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'}),
     CoreModule,
     HomeModule,
     BrowserAnimationsModule,
