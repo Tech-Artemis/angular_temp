@@ -5,7 +5,8 @@
     </div>
     <!-- Logo -->
     <div class="logo">
-        <a href="index.html"><img src="assets/img/Logo/logo-with-scent-icon/scent-vaali-square-larger-text.png" alt=""></a>
+        <a href="index.html"><img src="assets/img/Logo/logo-with-scent-icon/scent-vaali-square-larger-text.png"
+                alt=""></a>
     </div>
     <!-- Amado Nav -->
     <nav class="amado-nav">
@@ -17,7 +18,8 @@
     </nav>
     <!-- Button Group -->
     <div class="amado-btn-group mt-30 mb-100">
-        <a *ngFor="let link of promotionalButtonsToShow; let i = index" [href]="link.url" class="btn amado-btn" [ngClass]="{
+        <a *ngFor="let link of promotionalButtonsToShow; let i = index" [href]="link.url" class="btn amado-btn"
+            [ngClass]="{
                 active: (i+1) === defaultActivePromotionButton,
                 'mb-15': i < promotionalButtonsToShow.length}">
             {{link.text}}
@@ -30,9 +32,19 @@
         </a>
     </div>
     <!-- Social Button -->
-    <div class="social-info d-flex justify-content-between">
-        <a *ngFor="let profile of socialProfiles" [href]="profile.url">
-            <i class="{{profile.iconClass}} fa-2x"></i>
-        </a>
+    <div class="social-info justify-content-between">
+        <div *ngFor="let profile of socialProfiles" class="social-media-icon">
+            <a [href]="profile.url">
+                <!-- <i class="{{profile.iconClass}} fa-2x"></i> -->
+                <div *ngIf="!!profile.hasIconImage; then imageTemplate else svgTemplate"></div>
+                <ng-template #svgTemplate>
+                    <svg-icon [name]="profile.svgIconId" [style]="{ height: '40px', width:'40px' }">
+                    </svg-icon>
+                </ng-template>
+                <ng-template #imageTemplate>
+                    <img [src]="profile.iconImageName" height="40px" width="40px">
+                </ng-template>
+            </a>
+        </div>
     </div>
 </div>

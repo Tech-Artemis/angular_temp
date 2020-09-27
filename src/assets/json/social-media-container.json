@@ -1,0 +1,27 @@
+{
+    "imagePath": "/assets/img/social-media-images/",
+    "websites": [
+        {
+            "id": 1,
+            "name": "instagram",
+            "iconClass": "fa fa-instagram",
+            "url": "https://www.instagram.com/",
+            "svgIconId": "instagram_mini",
+            "iconImageName": "instagram-64.png"
+        },
+        {
+            "id": 2,
+            "name": "twitter",
+            "iconClass": "fa fa-twitter",
+            "url": "https://twitter.com/",
+            "svgIconId": "twitter_mini"
+        },
+        {
+            "id": 3,
+            "name": "facebook",
+            "iconClass": "fa fa-facebook",
+            "url": "https://www.facebook.com/",
+            "svgIconId": "facebook_mini"
+        }
+    ]
+}
