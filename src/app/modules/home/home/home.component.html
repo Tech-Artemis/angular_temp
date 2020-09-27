@@ -13,7 +13,7 @@
                     <mat-card-content>
                     </mat-card-content>
                     <mat-card-actions>
-                        <a mat-button routerLink="/cart">
+                        <a [hidden]="!isCartEnabled" mat-button routerLink="/cart">
                             <svg-icon name="add_to_cart_colored" [style]="{ height: '24px', width:'24px' }">
                             </svg-icon>
                             Add to cart
