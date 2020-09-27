@@ -7,6 +7,7 @@ import { SearchComponent } from './components/search/search.component';
 import { TabNavbarComponent } from './components/tab-navbar/tab-navbar.component';
 import { SvgModule } from '../shared/svg/svg.module';
 import { RouterModule } from '@angular/router';
+import { TopNavbarComponent } from './components/top-navbar/top-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RouterModule } from '@angular/router';
     NewsletterComponent,
     FooterComponent,
     SearchComponent,
-    TabNavbarComponent
+    TabNavbarComponent,
+    TopNavbarComponent
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,8 @@ import { RouterModule } from '@angular/router';
     SidebarComponent,
     NewsletterComponent,
     FooterComponent,
-    TabNavbarComponent
+    TabNavbarComponent,
+    TopNavbarComponent
   ]
 })
 export class CoreModule { }
