@@ -3,13 +3,13 @@ import * as socialMediaContainerJson from 'src/assets/json/social-media-containe
 import * as socialProfilesJson from 'src/assets/json/social-profiles.json';
 import { SocialMediaWebsite } from '../../interfaces/SocialMediaWebsite';
 import { SocialProfile } from '../../interfaces/SocialProfile';
-import { EntityRepopulationService } from '../../../common-services/entity-repopulation.service';
 import { SocialMediaContainer } from '../../interfaces/SocialMediaContainer';
+import { EntityRepopulation } from '../../../common-interfaces/interfaces/entity-repopulation.interface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SocialProfilesService implements EntityRepopulationService {
+export class SocialProfilesService implements EntityRepopulation {
   socialMediaContainer: SocialMediaContainer;
   private socialProfiles: SocialProfile[];
 

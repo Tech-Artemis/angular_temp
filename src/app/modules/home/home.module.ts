@@ -12,13 +12,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SvgModule } from '../shared/svg/svg.module';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent }
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, AboutComponent],
   imports: [
     CommonModule,
     MatCardModule,

@@ -4,5 +4,7 @@ export interface SocialMediaWebsite {
     iconClass: string,
     url: string,
     svgIconId: string,
-    iconImageName: string
+    iconImageName: string,
+    embeddingUrl: string,
+    videoIdPlaceholder: string
 }

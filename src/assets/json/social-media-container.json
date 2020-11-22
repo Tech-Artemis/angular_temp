@@ -7,21 +7,34 @@
             "iconClass": "fa fa-instagram",
             "url": "https://www.instagram.com/",
             "svgIconId": "instagram_mini",
-            "iconImageName": "instagram-64.png"
+            "iconImageName": "instagram-64.png",
+            "embeddingUrl": "embed/{videoId}",
+            "videoIdPlaceholder": "{videoId}"
         },
         {
             "id": 2,
             "name": "twitter",
             "iconClass": "fa fa-twitter",
             "url": "https://twitter.com/",
-            "svgIconId": "twitter_mini"
+            "svgIconId": "twitter_mini",
+            "embeddingUrl": "embed/{videoId}",
+            "videoIdPlaceholder": "{videoId}"
         },
         {
             "id": 3,
             "name": "facebook",
             "iconClass": "fa fa-facebook",
             "url": "https://www.facebook.com/",
-            "svgIconId": "facebook_mini"
+            "svgIconId": "facebook_mini",
+            "embeddingUrl": "embed/{videoId}",
+            "videoIdPlaceholder": "{videoId}"
+        },
+        {
+            "id": 4,
+            "name": "youtube",
+            "url": "https://www.youtube.com/",
+            "embeddingUrl": "embed/{videoId}",
+            "videoIdPlaceholder": "{videoId}"
         }
     ]
 }
