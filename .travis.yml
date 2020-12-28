@@ -14,5 +14,6 @@ before_script:
 
 script:
 - ng build --prod --base-href https://t-palmer.github.io/travis-demo/
+- git add .
 - git commit -am "Deploy to GitHub pages"
 - git push
