@@ -14,17 +14,21 @@ before_script:
 
 script:
 - ng build --prod --base-href docs
-- git commit -am "Deploy to GitHub pages"
-- git status
-- git branch tmp
-- git status
-- git checkout master
-- git status
-- git merge tmp
-- git status
+
+after_success:
+  - .travis/push.sh
+
+# - git commit -am "Deploy to GitHub pages"
+# - git status
+# - git branch tmp
+# - git status
+# - git checkout master
+# - git status
+# - git merge tmp
+# - git status
 # - git stash
 # - git checkout master
 # - git stash pop
 # - git add .
 # - git commit -am "Deploy to GitHub pages"
-- git push
+# - git push
