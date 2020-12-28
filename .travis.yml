@@ -18,6 +18,9 @@ before_script:
 script:
 - ng build --prod --base-href docs
 - git status
+- git stash
+- git checkout master
+- git stash pop
 - git add .
 - git commit -am "Deploy to GitHub pages"
 - git push
