@@ -17,7 +17,12 @@ before_script:
 
 script:
 - ng build --prod --base-href docs
-- git branch "$TRAVIS_BUILD_NUMBER_deploy"
+- git status
+- git branch tmp
+- git status
+- git checkout master
+- git status
+- git merge
 - git status
 # - git stash
 # - git checkout master
