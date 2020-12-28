@@ -9,14 +9,12 @@ branches:
   only:
   - master
 
-script:
-- git branch
-
 before_script:
   - npm install -g @angular/cli
 
 script:
 - ng build --prod --base-href docs
+- git commit -am "Deploy to GitHub pages"
 - git status
 - git branch tmp
 - git status
