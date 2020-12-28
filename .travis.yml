@@ -25,7 +25,7 @@ script:
 - ng build --prod --base-href docs
 
 after_success:
-  - ./push.sh
+  - sudo ./push.sh
 
 # - git commit -am "Deploy to GitHub pages"
 # - git status
