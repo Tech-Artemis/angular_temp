@@ -12,14 +12,20 @@ branches:
 before_script:
   - npm install -g @angular/cli
 
-deploy:
-  skip_cleanup: true
+# deploy:
+#   skip_cleanup: true
+#   target-branch: master # Commit to master instead of gh-pages
+#   github-token: $GITHUB_TOKEN
+#   keep-history: true # By default, Travis uses push --force and wipes out commit history
+#   verbose: true
+#   on:
+#     branch: master
 
 script:
 - ng build --prod --base-href docs
 
 after_success:
-  - push.sh
+  - ./push.sh
 
 # - git commit -am "Deploy to GitHub pages"
 # - git status
