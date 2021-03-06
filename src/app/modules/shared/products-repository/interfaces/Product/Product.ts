@@ -1,5 +1,6 @@
 import { Category } from '../Category/Category';
 import { SkinArea } from '../SkinArea';
+import { ProductUnitType } from './ProductUnitType';
 
 export interface Product {
     Id: number,
@@ -7,9 +8,11 @@ export interface Product {
     Description: string,
     Price: number,
     ImagePath: string,
-    CategoryId: number,
+    CategoryIds: number[],
     SkinAreaIds: number[],
     Tags: string[],
-    Category: Category,
-    SkinAreas: SkinArea[]
+    Categories: Category[],
+    SkinAreas: SkinArea[],
+    ProductUnitTypeId: number,
+    ProductUnitType: ProductUnitType
 }

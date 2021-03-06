@@ -52,5 +52,11 @@
         "Name": "Insect Repellent",
         "ParentCategoryId": 4,
         "ImageFolderPath": "/insect-repellent"
+    },
+    {
+        "Id": 10,
+        "Name": "Attar",
+        "ParentCategoryId": null,
+        "ImageFolderPath": "/attar"
     }
 ]

@@ -7,7 +7,7 @@
             "Description": "",
             "Price": 150,
             "ImagePath": "/lavender-fusion/scent-vaali-after-shave-lotion-lavender-fusion-squared.jpg",
-            "CategoryId": 6,
+            "CategoryIds": [6],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": null
@@ -18,7 +18,7 @@
             "Description": "",
             "Price": 100,
             "ImagePath": "/blue-lagoon/30-ml/scent-wali-eau-de-parfum-blue-lagoon-30-ml-squared.jpg",
-            "CategoryId": 2,
+            "CategoryIds": [2],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": "30ml"
@@ -29,7 +29,7 @@
             "Description": "",
             "Price": 150,
             "ImagePath": "/blue-lagoon/60-ml/scent-wali-eau-de-parfum-blue-lagoon-60-ml-squared.jpg",
-            "CategoryId": 2,
+            "CategoryIds": [2],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": "60ml"
@@ -40,7 +40,7 @@
             "Description": "",
             "Price": 100,
             "ImagePath": "/non-alcoholic-attar/scent-wali-eau-de-parfum-non-alcoholic-attar-squared.jpg",
-            "CategoryId": 2,
+            "CategoryIds": [2],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": null
@@ -51,7 +51,7 @@
             "Description": "",
             "Price": 50,
             "ImagePath": "/pomegranate-berry/30-ml/scent-wali-eau-de-parfum-pomegranate-berry-30-ml-squared.jpg",
-            "CategoryId": 2,
+            "CategoryIds": [2],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": "30ml"
@@ -62,7 +62,7 @@
             "Description": "",
             "Price": 150,
             "ImagePath": "/pomegranate-berry/60-ml/scent-wali-eau-de-parfum-pomegranate-berry-60-ml-squared.jpg",
-            "CategoryId": 2,
+            "CategoryIds": [2],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": "60ml"
@@ -73,7 +73,7 @@
             "Description": "",
             "Price": 40,
             "ImagePath": "/scent-wali-luxury-purse-concentrate-squared.jpg",
-            "CategoryId": 7,
+            "CategoryIds": [7],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": null
@@ -84,7 +84,7 @@
             "Description": "",
             "Price": 150,
             "ImagePath": "/roll-on-for-headache/scent-wali-medi-care-headache-relief-roll-on-for-headache-squared.jpg",
-            "CategoryId": 8,
+            "CategoryIds": [8],
             "SkinAreaIds": [1, 3],
             "Tags": ["Bath"],
             "Quantity": null
@@ -95,7 +95,7 @@
             "Description": "",
             "Price": 150,
             "ImagePath": "/roll-on-herbal-insect-repellent/scent-wali-medi-care-insect-repellent-roll-on-insect-herbal-repellent-squared.jpg",
-            "CategoryId" : 9,
+            "CategoryIds" : [9],
             "SkinAreaIds": [1, 3],
             "Tags": ["Lotion"],
             "Quantity": null
@@ -106,7 +106,7 @@
             "Description": "",
             "Price": 100,
             "ImagePath": "/aromatic-diffuser-set/scent-wali-room-freshner-aromatic-diffuser-set.jpg",
-            "CategoryId": 5,
+            "CategoryIds": [5],
             "SkinAreaIds": [6],
             "Tags": [],
             "Quantity": null
@@ -117,10 +117,46 @@
             "Description": "",
             "Price": 200,
             "ImagePath": "/green-apple/scent-wali-room-freshner-green-apple.jpg",
-            "CategoryId": 5,
+            "CategoryIds": [5],
             "SkinAreaIds": [2],
             "Tags": ["Hairfall", "Dandruff"],
             "Quantity": null
+        },
+        {
+            "Id": 12,
+            "Name": "(Combo) Lacoste Cool, Burberry London & Silver Sand",
+            "Description": "",
+            "Price": 150,
+            "ImagePath": "/lacoste-cool-burberry-london-silver-sand/lacoste-cool-burberry-london-silver-sand.jpg",
+            "CategoryIds": [10],
+            "SkinAreaIds": [2],
+            "Tags": ["Hairfall", "Dandruff"],
+            "Quantity": "5ml",
+            "IsNew": true
+        },
+        {
+            "Id": 13,
+            "Name": "(New) Silver Sand",
+            "Description": "",
+            "Price": 50,
+            "ImagePath": "/silver-sand/silver-sand.jpg",
+            "CategoryIds": [10],
+            "SkinAreaIds": [2],
+            "Tags": ["Hairfall", "Dandruff"],
+            "Quantity": "5ml and 12ml",
+            "IsNew": true
+        },
+        {
+            "Id": 14,
+            "Name": "(Combo) Dubai Midnight and Lacoste Cool",
+            "Description": "",
+            "Price": 150,
+            "ImagePath": "/dubai-midnight-lacoste-cool/dubai-midnight-lacoste-cool-squared.jpg",
+            "CategoryIds": [10],
+            "SkinAreaIds": [2],
+            "Tags": ["Hairfall", "Dandruff"],
+            "Quantity": "5ml + 12ml",
+            "IsNew": true
         }
     ]
 }
