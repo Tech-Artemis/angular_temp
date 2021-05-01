@@ -1,20 +1,13 @@
-name: Auto Assign to Project(s)
-
-on:
-  issues:
-    types: [opened, labeled]
-  pull_request_target:
-    types: [opened, labeled]
-env:
-  MY_GITHUB_TOKEN: ${{ secrets.AUTOLINKREPOISSUEWITHPROJECT }}
-
+name: Add a new GitHub issue to the specified project column
+on: [issues, pull_request]
 jobs:
-  assign_one_project:
+  add-new-issues-to-project-column:
     runs-on: ubuntu-latest
-    name: Assign to One Project
     steps:
-    - name: Assign NEW issues and NEW pull requests to project 2
-      uses: srggrs/assign-one-project-github-action@1.2.1
-      if: github.event.action == 'opened'
-      with:
-        project: 'https://github.com/orgs/MPhlix/projects/2'
+    - name: add-new-issues-to-organization-based-project-column
+      uses: docker://takanabe/github-actions-automate-projects:v0.0.1
+      if: github.event_name == 'issues' && github.event.action == 'opened'
+      env:
+        GITHUB_TOKEN: ${{ secrets.AUTOLINKREPOISSUEWITHPROJECT }}
+        GITHUB_PROJECT_URL: https://github.com/orgs/organization_name/projects/1
+        GITHUB_PROJECT_COLUMN_NAME: To Do
